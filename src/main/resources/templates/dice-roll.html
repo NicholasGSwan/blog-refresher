@@ -6,5 +6,7 @@
 </head>
 <body>
 <p>How's it going, mang?</p>
+<div>Guess the dice roll!</div>
+<a th:each="side : ${dice}" th:href="@{/dice/${side}(side=${side})}" th:text="${side}"></a>
 </body>
 </html>
